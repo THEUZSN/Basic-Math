@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicMath Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+      <source src="sounds/song.mp3" type="audio/mpeg">
+    
+    </audio>
+    <div class="container-jogo">
+        <header>
+            <p id="pontuacao">Pontuação: 0</p>
+            <p id="tempo">Tempo: 60</p>
+        </header>
+        <h1>BasicMath</h1>
+        <p id="pergunta">Quanto é 2 + 2?</p>
+
+        <div class="opcoes">
+            <button onclick="verificarResposta(this)" class="botao-opcao"></button>
+            <button onclick="verificarResposta(this)" class="botao-opcao"></button>
+            <button onclick="verificarResposta(this)" class="botao-opcao"></button>
+            <button onclick="verificarResposta(this)" class="botao-opcao"></button>
+        </div>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
